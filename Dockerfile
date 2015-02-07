@@ -10,8 +10,8 @@ RUN apt-get update ; \
 
 RUN rm -rf /app; \
 	mkdir -p /app;\
-	git clone https://github.com/DogF/LimeSurvey.git\
-	mv LimeSurvey /app/LimeSurvey
+	git clone https://github.com/DogF/LimeSurvey.git; \
+	mv LimeSurvey /app/LimeSurvey; \
 	chown -R www-data:www-data /app
 
 RUN chown www-data:www-data /var/lib/php5
